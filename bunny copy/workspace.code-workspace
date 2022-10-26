@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../fontawesome-free-5.15.4-web/webfonts"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bunny copy"
+	}
+}

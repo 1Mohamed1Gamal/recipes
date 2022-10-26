@@ -1,0 +1,610 @@
+/* Start varible */
+:root {
+    --main-color: #664b42;
+    --secound-color: lightblue;
+}
+
+/* End Varible */
+/* Start Golable Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0ch;
+    margin: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* End Golable Rules */
+/* Start header */
+.poom {
+    /* background-color: #3f51b5; */
+    /* background-color: rgb(248, 223, 193); */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #3f51b5;
+}
+
+.btn input {
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: 0.09s;
+}
+
+.btn input:hover {
+    transform: translate(0px, -5px);
+    box-shadow: 5px 4px 0px 0px rgb(6 4 0);
+}
+
+header {
+    background-image: url(../image/sukhis-bg-hi-res.png);
+}
+
+header .container {
+    display: grid;
+    grid-template-areas: "io io li li li li li li";
+}
+
+header .container .logo {
+    align-self: center;
+    font-size: 50px;
+    grid-area: io;
+    padding: 10px 30px;
+}
+
+header .container .logo a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-family: "Merienda One", cursive;
+}
+
+header .container nav {
+    grid-area: li;
+    justify-self: flex-end;
+    align-self: center;
+    background-image: url(../image/WhatsApp\ Image\ 2022-08-24\ at\ 11.21.28\ AM.jpeg);
+    border-radius: 10px;
+    outline: 2px solid black;
+}
+
+header .container nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .container nav li {
+    display: inline-block;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    /* margin-right: 10px; */
+    transition: 0.3s;
+}
+
+header .container nav li:hover {
+    background-color: #4caf50;
+}
+
+header .container nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 0.3s;
+    position: relative;
+    padding: 2px 0;
+}
+
+header .container nav li:hover a {
+    color: white;
+}
+
+/* End header */
+
+/* start landing */
+.landing {
+    background-image: url(../image/footer.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.landing .intro-text {
+    text-align: center;
+    color: #fff;
+    line-height: 1.8;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+
+}
+
+.landing .intro-text h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+
+}
+
+.landing .intro-text p {
+    max-width: 600px;
+    font-size: 35px;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* end landing */
+
+/* start meal1 */
+
+
+.meal1 .container {
+    padding: 15px;
+    position: relative;
+
+}
+
+.meal1 .container .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal1 .container h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    background-image: url();
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.meal1 .container .img1 {
+    
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.meal1 .container .right {
+    width: 40%;
+    overflow: auto;
+    height: 300px;
+    border: 2px double black;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    height: 456;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg)
+}
+
+.meal1 .container .right .ing1 {
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.meal1 .container .left {
+    width: 59%;
+    overflow: auto;
+    line-height: 1.6;
+    height: 300px;
+    border: 2px double black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+}
+
+
+.meal1 .container .left .instruction {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+/* end meal 1 */
+
+/* start meal 2 */
+.meal2 .container {
+    padding: 15px;
+    position: relative;
+
+}
+
+.meal2 .container .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal2 .container h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.meal2 .container .img2 {
+    border-radius: 250px;
+    width: 100%;
+    height: 450px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.meal2 .container .right {
+    width: 40%;
+    overflow: auto;
+    height: 300px;
+    border: 2px double black;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    height: 456;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg)
+}
+
+.meal2 .container .right .ing1 {
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.meal2 .container .left {
+    width: 59%;
+    overflow: auto;
+    line-height: 1.6;
+    height: 300px;
+    border: 2px double black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+}
+
+
+.meal2 .container .left .instruction {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+/* end meal 2 */
+
+/* start meal 3 */
+.meal3 .container {
+    padding: 15px;
+    position: relative;
+
+}
+
+.meal3 .container .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal3 .container h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.meal3 .container .img3 {
+    border-radius: 250px;
+    width: 100%;
+    height: 450px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.meal3 .container .right {
+    width: 40%;
+    overflow: auto;
+    height: 300px;
+    border: 2px double black;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    height: 456;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg)
+}
+
+.meal3 .container .right .ing1 {
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.meal3 .container .left {
+    width: 59%;
+    overflow: auto;
+    line-height: 1.6;
+    height: 300px;
+    border: 2px double black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+}
+
+
+.meal3 .container .left .instruction {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+/* end meal 3 */
+
+/* start meal 4 */
+.meal4 .container {
+    padding: 15px;
+    position: relative;
+
+}
+
+.meal4 .container .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal4 .container h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.meal4 .container .img4 {
+    border-radius: 250px;
+    width: 100%;
+    height: 450px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.meal4 .container .right {
+    width: 40%;
+    overflow: auto;
+    height: 300px;
+    border: 2px double black;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    height: 456;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg)
+}
+
+.meal4 .container .right .ing1 {
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.meal4 .container .left {
+    width: 59%;
+    overflow: auto;
+    line-height: 1.6;
+    height: 300px;
+    border: 2px double black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+}
+
+
+.meal4 .container .left .instruction {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+
+/* end meal 4 */
+
+/* start meal 5 */
+.meal5 .container {
+    padding: 15px;
+    position: relative;
+
+}
+
+.meal5 .container .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal5 .container h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.meal5 .container .img5 {
+    border-radius: 250px;
+    width: 100%;
+    height: 450px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.meal5 .container .right {
+    width: 40%;
+    overflow: auto;
+    height: 300px;
+    border: 2px double black;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    height: 456;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg)
+}
+
+.meal5 .container .right .ing1 {
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.meal5 .container .left {
+    width: 59%;
+    overflow: auto;
+    line-height: 1.6;
+    height: 300px;
+    border: 2px double black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background-image: url(../WhatsApp\ Image\ 2022-08-18\ at\ 2.55.38\ PM.jpeg);
+}
+
+
+.meal5 .container .left .instruction {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    color: rgb(156, 91, 11);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 4px;
+}
+/* #x1,#x2,#x3,#x4
+{
+    border-radius: 250px;
+    width: 100%;
+    height: 450px; */
+/* } */
+/* end meal 5 */
+
+
+

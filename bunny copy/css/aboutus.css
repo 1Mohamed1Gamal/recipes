@@ -1,0 +1,259 @@
+/* Start varible */
+:root {
+  --padding-section: 50px;
+}
+/* End Varible */
+/* Start Golable Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0ch;
+  margin: 0;
+}
+
+body {
+  /* font-family: "Pacifico", cursive; */
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: "Edu SA Beginner", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.special-heading {
+  color: var(--secound-color);
+  font-weight: 800;
+  font-size: 100px;
+  text-align: center;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.special-heading + p {
+  margin: -30px 0 0;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.content {
+  margin-bottom: 25px;
+}
+.content h2 {
+  text-align: center;
+  line-height: 2;
+  color: #777;
+  font-weight: 800;
+}
+
+.content p {
+  text-align: center;
+  line-height: 1.5;
+  color: #777;
+}
+@media (max-width: 767px) {
+  .special-heading {
+    font-size: 60px;
+  }
+
+  .special-heading + p {
+    margin-top: -20px;
+  }
+}
+
+/* End Golable Rules */
+/* Start header */
+header {
+  background-repeat: no-repeat;
+  padding: 30px;
+  background-color: beige;
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .text h2 {
+  font-size: 50px;
+  letter-spacing: 15px;
+  font-family: "Pacifico", cursive;
+  color: orange;
+}
+header .text h2 + h4 {
+  color: #777;
+  font-size: 18px;
+}
+/* End header */
+
+/* Start landing */
+.landing {
+  height: calc(100vh - 138.2px);
+  background-image: url(../image/twabel.jpeg);
+  background-size: cover;
+  background-position-y: px;
+  position: relative;
+}
+.landing .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing .intro-text h1 {
+  margin: 0;
+  font-size: 50px;
+  color: var(--secound-color);
+  text-align: center;
+}
+.landing .intro-text q {
+  color: var(--secound-color);
+}
+/* End landing */
+
+/* Start big card */
+.big-card {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  display: flex;
+  flex-direction: column;
+}
+
+.big-card .card {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+  grid-template-areas: "img img img img tx tx tx tx tx tx";
+  gap: 100px 0;
+  transition: 0.1s;
+  /* background-color: #eee; */
+}
+
+.big-card .card:hover {
+  background-color: #ddd;
+  border-radius: 6px;
+}
+.big-card .card .image {
+  width: 175px;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 50%;
+  grid-area: img;
+  margin: 30px 20px 10px 10px;
+  justify-self: center;
+}
+.big-card .card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.big-card .container img:hover {
+  transform: rotate(5deg) scale(1.2);
+}
+.big-card .card .text {
+  display: grid;
+  grid-area: tx;
+  margin: 20px;
+}
+.big-card .card .text h3 {
+  font-family: "Ubuntu", sans-serif;
+  align-self: end;
+  text-transform: capitalize;
+}
+.big-card .card .text h4 {
+  color: orange;
+  margin: 5px 0 10px;
+}
+.big-card .card .text p {
+}
+@media (max-width: 767px) {
+  .big-card .card .image {
+    width: 100px;
+    height: 100px;
+  }
+  .big-card .card .text p {
+    font-size: 10px;
+  }
+}
+.big-card .card.right {
+  direction: rtl;
+  /* background-color: #eee; */
+  border-radius: 10px;
+}
+::selection {
+  color: orangered;
+  background-color: white;
+}
+/* end big card */
+/* Start Map */
+.map {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+}
+.map .image {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .map .image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .map .image img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* End Map */
+/* footer */
+footer {
+  background-color: #2c4755;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+footer span {
+  color: orange;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1.7px;
+}
+/* footer */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title = food talk -->
+    <title>Login | FoodTalk</title>
+    <!-- main css style sheet -->
+    <link rel="stylesheet" href="css/login.css" />
+    <!-- normalize css style sheet -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- font awesome css style sheet -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <div class="place">
+      <div class="main-place">
+        <div class="container">
+          <!-- Start Title -->
+          <div class="title">Login to <span>Recipes</span></div>
+          <!-- End Title -->
+          <!-- Start Login card -->
+          <div class="login-card">
+            <div class="links">
+              <a href="https://www.google.com" class="google-link">
+                <i class="fa-brands fa-google"></i>
+                <span class="text">Continue with Google</span>
+              </a>
+            </div>
+            <!-- Start Or hr -->
+            <div class="hr">
+              <span>or</span>
+            </div>
+            <!-- End Or hr -->
+            <!-- Start form -->
+            <form action="">
+              <!-- Start card -->
+              <div class="card email">
+                <label for="email">Email</label>
+                <div class="box">
+                  <input type="email" placeholder="Enter your email address" id="idforusername" />
+                </div>
+              </div>
+              <!-- End card -->
+              <!-- Start card -->
+              <div class="card password">
+                <label for="password">
+                  <button id="my-btn"><i class="fa-solid fa-eye"></i></button>
+                  Password</label>
+
+                <div class="box">
+                  <input type="password" placeholder="Enter your Password" id="idforpassword" />
+                </div>
+              </div>
+              <!-- End card -->
+              <div class="tool">
+                <input type="submit" value="Login" class="btn" onclick="check ()"/>
+                <input type="submit" value="Forget password?" class="btn" onclick="backtologin()" />
+              </div>
+            </form>
+            <!-- end form -->
+          </div>
+          <!-- End Login card -->
+          <!-- Start Footer -->
+          <footer>
+            <a href="http://127.0.0.1:5500/signup.html" class="">Create account</a> • <a href="#3">Terms</a> •
+            <a href="#2">Privacy</a>
+          </footer>
+          <!-- End Footer -->
+          <div class="RecaptchaDisclaimer">
+            This website is protected by Google reCAPTCHA.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="javas.js"></script>
+  </body>
+</html>
